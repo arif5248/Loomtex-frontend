@@ -1,4 +1,4 @@
-.container {
+.heading-container {
   background-color: #0c2636;
   padding: 0 !important;
   border-radius: 5px;
@@ -6,6 +6,9 @@
   box-shadow: 0px 0px 5px #8888884f;
   overflow: hidden;
   white-space: nowrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
 }
 .navleft {
   width: 30%;

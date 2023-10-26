@@ -10,7 +10,7 @@ function Header() {
   return (
     <Fragment>
       <Navbar className="navBar my-text" expand="lg">
-        <Container className="container">
+        <Container className="heading-container">
           <div className="navleft">
             <Navbar.Brand as={Link} to="/" className="nab-brand my-text">
               <img className="logoImage" src={Logo} alt="LoomTex" />
