@@ -1,0 +1,66 @@
+.container {
+  background-color: #0c2636;
+  padding: 0 !important;
+  border-radius: 5px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 5px #8888884f;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.navleft {
+  width: 30%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.navRight {
+  width: 70%;
+}
+.logoImage {
+  width: 215px;
+  height: auto;
+  padding: 10px 10px;
+}
+.navbar-nav {
+  padding-left: 30px;
+  padding-right: 30px;
+  list-style: none;
+  width: 100%;
+  justify-content: space-between !important;
+  --bs-nav-link-color: rgba(255, 255, 255, 0.596) !important;
+  --bs-nav-link-hover-color: white !important;
+}
+.rightBoxOne {
+  display: flex;
+}
+.rightBoxOne > .nav-link {
+  padding-right: 50px !important;
+}
+.rightBoxTwo > .nav-link {
+  padding-right: 0px;
+}
+.navbar-toggler-icon {
+  color: white !important; /* Replace with your desired color */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .logoImage {
+    width: 100px;
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) {
+}

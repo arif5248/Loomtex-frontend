@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.my-text {
+  font-family: "Inter", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+input ::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+.greenColor {
+  color: green;
+}
+.redColor {
+  color: red;
+}
+.active {
+  color: white; /* Change the color of the active link */
+  text-decoration: underline; /* Apply the underline effect to the active link */
+}
+
+/* Standard styles for all screen sizes */
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens with a width of 768px or smaller */
+  body {
+    font-size: 14px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for screens with a width between 768px and 1024px */
+  body {
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1025px) {
+  /* Styles for screens with a width larger than 1024px */
+  body {
+    font-size: 18px;
   }
 }
