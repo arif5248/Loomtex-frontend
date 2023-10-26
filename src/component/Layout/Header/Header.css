@@ -11,19 +11,22 @@
   top: 0px;
 }
 .navleft {
-  width: 30%;
+  width: 20%;
   background-color: white;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .navRight {
-  width: 70%;
+  width: 80%;
 }
 .logoImage {
   width: 215px;
   height: auto;
   padding: 10px 10px;
+}
+.navbar {
+  --bs-navbar-brand-margin-end: 0;
 }
 .navbar-nav {
   padding-left: 30px;
