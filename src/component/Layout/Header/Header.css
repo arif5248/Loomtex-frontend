@@ -1,5 +1,5 @@
 .heading-container {
-  background-color: #fcb040;
+  background-color: #b16c07;
   padding: 0 !important;
   border-radius: 5px;
   margin-top: 50px;
@@ -34,7 +34,7 @@
   list-style: none;
   width: 100%;
   justify-content: space-between !important;
-  --bs-nav-link-color: rgba(255, 255, 255, 0.596) !important;
+  --bs-nav-link-color: black !important;
   --bs-nav-link-hover-color: white !important;
 }
 .rightBoxOne {
