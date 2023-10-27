@@ -20,7 +20,7 @@ function Footer() {
     });
   };
 
-  // Event listener to control the visibility of the "scroll to top" button
+  //   Event listener to control the visibility of the "scroll to top" button
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsVisible(true);
@@ -44,9 +44,11 @@ function Footer() {
             </a>
           </div>
           <div className="footer-logo">
-            <a href="/" id="scrollToTopLogo" onClick={scrollToTop}>
-              <img className="logoImage" src={Logo} alt="LoomTex" />
-            </a>
+            {isVisible && (
+              <a href="/" id="scrollToTopLogo" onClick={scrollToTop}>
+                <img className="logoImage" src={Logo} alt="LoomTex" />
+              </a>
+            )}
           </div>
           <div className="phone-section">
             <a href="tel:+971508810769" className="phone-link">

@@ -1,0 +1,25 @@
+.carousel-root {
+  margin-top: -195px;
+}
+.landing-page {
+  display: flex;
+}
+.hero-section-right {
+  padding: 45px;
+  width: 25%;
+}
+.content-right {
+  margin-bottom: 10px;
+}
+.content-heading {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+.content-desccription {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.527);
+}
+.hero-section-left {
+  width: 75%;
+}

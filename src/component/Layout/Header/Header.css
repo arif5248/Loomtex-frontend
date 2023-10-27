@@ -6,9 +6,6 @@
   box-shadow: 0px 0px 5px #8888884f;
   overflow: hidden;
   white-space: nowrap;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0px;
 }
 .navleft {
   width: 20%;
@@ -24,9 +21,13 @@
   width: 215px;
   height: auto;
   padding: 10px 10px;
+  animation: logoTop 1s ease forwards;
 }
 .navbar {
+  position: sticky;
+  top: -60px;
   --bs-navbar-brand-margin-end: 0;
+  z-index: 999;
 }
 .navbar-nav {
   padding-left: 30px;
@@ -36,6 +37,11 @@
   justify-content: space-between !important;
   --bs-nav-link-color: black !important;
   --bs-nav-link-hover-color: white !important;
+  animation: navAnimation 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.nav-link {
+  animation: navAnimation 1s ease forwards;
 }
 .rightBoxOne {
   display: flex;
@@ -48,6 +54,26 @@
 }
 .navbar-toggler-icon {
   color: white !important; /* Replace with your desired color */
+}
+
+@keyframes logoTop {
+  0% {
+    width: 160px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes navAnimation {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {

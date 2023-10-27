@@ -1,0 +1,84 @@
+/* CustomCarousel.css */
+.image-content {
+  width: 100%;
+  height: auto;
+  /* max-height: 400px;  */
+  object-fit: cover;
+  animation: zoomIn 10s infinite;
+  position: relative;
+}
+
+.text-content {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(10%, -20%);
+}
+
+.box > .text-content h2 {
+  color: white;
+  font-weight: 900;
+  width: 60%;
+  font-size: 50px;
+  text-align: left;
+  margin-bottom: 35px;
+  padding: 0;
+  animation: heroheading 1s 1s ease backwards;
+  /* -webkit-text-stroke: 2px black;    
+  text-stroke: 2px black; */
+}
+
+.text-content p {
+  color: rgba(255, 255, 255, 0.897);
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  animation: heroDescription 1s 1.5s ease backwards;
+}
+
+/* Animation for the text */
+@keyframes heroheading {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes heroDescription {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Apply the slide-in animation to text on hover */
+.image-content:hover + .text-content {
+  animation: slideIn 1s forwards;
+}
+
+.control-dots {
+  display: none;
+}
+.horizontal-line-1 {
+  border-top: 1px solid rgba(255, 255, 255, 0.897);
+  width: 100%;
+}
