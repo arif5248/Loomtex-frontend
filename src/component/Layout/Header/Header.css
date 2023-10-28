@@ -24,6 +24,7 @@
   animation: logoTop 1s ease forwards;
 }
 .navbar {
+  padding: 0px;
   position: sticky;
   top: -60px;
   --bs-navbar-brand-margin-end: 0;
@@ -77,9 +78,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    margin-left: 10px;
-    margin-right: 10px;
+  .heading-container {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     max-width: 100%;
     box-sizing: border-box;
     overflow: hidden;
@@ -100,12 +102,17 @@
     margin-right: 10px;
     color: white;
   }
+  .navbar {
+    position: sticky;
+    top: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    margin-left: 10px;
-    margin-right: 10px;
+  .heading-container {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     max-width: 100%;
     box-sizing: border-box;
     overflow: hidden;
@@ -125,6 +132,10 @@
   .navbar-toggler {
     margin-right: 10px;
     color: white;
+  }
+  .navbar {
+    position: sticky;
+    top: 0px;
   }
 }
 

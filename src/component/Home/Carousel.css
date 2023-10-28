@@ -15,7 +15,7 @@
   transform: translate(10%, -20%);
 }
 
-.box > .text-content h2 {
+.box > .text-content > h2 {
   color: white;
   font-weight: 900;
   width: 60%;
@@ -81,4 +81,35 @@
 .horizontal-line-1 {
   border-top: 1px solid rgba(255, 255, 255, 0.897);
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .box > .text-content > h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    width: 70%;
+  }
+  .text-content p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .box > .text-content > h2 {
+    margin-bottom: 25px;
+    font-size: 35px;
+    font-weight: 800;
+    width: 60%;
+  }
+  .text-content p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
 }

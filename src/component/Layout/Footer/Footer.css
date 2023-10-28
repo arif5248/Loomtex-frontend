@@ -57,3 +57,15 @@ div.phone-section {
   font-weight: 500;
   color: Black;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-logo {
+    padding: 0px 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) {
+}
