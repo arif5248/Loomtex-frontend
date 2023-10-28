@@ -5,14 +5,17 @@
   white-space: nowrap;
 }
 .row-one {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-div.email-section {
+.row-one > .email-section {
+  /* width: 30%; */
   text-align: right;
 }
-div.phone-section {
+.row-one > .phone-section {
+  /* width: 30%; */
   text-align: left;
 }
 .email-phone-heading {
@@ -25,7 +28,8 @@ div.phone-section {
 .email-phone:hover {
   color: black;
 }
-.footer-logo {
+.row-one > .footer-logo {
+  /* width: 30%; */
   padding: 0px 50px;
 }
 
@@ -59,12 +63,21 @@ div.phone-section {
 }
 
 @media screen and (max-width: 768px) {
-  .footer-logo {
-    padding: 0px 30px;
+  .row-one > .footer-logo {
+    padding: 0px 20px;
+  }
+  .footer-logo-img {
+    width: 100px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .row-one > .footer-logo {
+    padding: 0px 20px;
+  }
+  .footer-logo-img {
+    width: 200px;
+  }
 }
 
 @media screen and (min-width: 1025px) {

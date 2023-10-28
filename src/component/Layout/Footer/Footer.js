@@ -46,7 +46,11 @@ function Footer() {
           <div className="footer-logo">
             {isVisible && (
               <a href="/" id="scrollToTopLogo" onClick={scrollToTop}>
-                <img className="logoImage" src={Logo} alt="LoomTex" />
+                <img
+                  className="logoImage footer-logo-img"
+                  src={Logo}
+                  alt="LoomTex"
+                />
               </a>
             )}
           </div>
