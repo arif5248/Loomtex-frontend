@@ -1,8 +1,7 @@
 /* CustomCarousel.css */
 .image-content {
   width: 100%;
-  height: auto;
-  /* max-height: 400px;  */
+  max-height: 625px;
   object-fit: cover;
   animation: zoomIn 10s infinite;
   position: relative;

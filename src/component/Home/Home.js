@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import CustomCarousel from "./Carousel";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import BasicService from "./BasicService";
 
 function Home() {
   return (
@@ -36,6 +37,9 @@ function Home() {
             </p>
           </Link>
         </div>
+      </div>
+      <div className="basic-service">
+        <BasicService />
       </div>
     </Fragment>
   );
