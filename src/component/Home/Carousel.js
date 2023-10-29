@@ -62,20 +62,40 @@ function CustomCarousel() {
     },
   ];
 
+  // ...
+
   return (
     <Fragment>
       <Carousel autoPlay showStatus={false} showThumbs={false}>
         {HeroImages.map((HeroImage, index) => (
           <div className="box" key={index}>
-            <img
-              src={HeroImage.imageUrl}
-              alt={`Image ${index + 1}`}
-              className="image-content"
-            />
+            <div className="inner-box">
+              <img
+                src={HeroImage.imageUrl}
+                alt={`Image ${index + 1}`}
+                className="image-content"
+              />
+              <div className="overlay-carousel"></div>
+            </div>
+
             <div className="text-content">
-              <h2>{HeroImage.imageTitle}</h2>
+              <h2
+                style={{
+                  animation: `heroheading 1s ${index * 0.5}s ease backwards`,
+                }}
+              >
+                {HeroImage.imageTitle}
+              </h2>
               <div className="horizontal-line-1"></div>
-              <p>{HeroImage.imageDescription}</p>
+              <p
+                style={{
+                  animation: `heroDescription 1s ${
+                    index * 0.5 + 0.5
+                  }s ease backwards`,
+                }}
+              >
+                {HeroImage.imageDescription}
+              </p>
             </div>
           </div>
         ))}

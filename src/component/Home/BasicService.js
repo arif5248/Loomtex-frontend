@@ -2,6 +2,9 @@ import React, { Fragment } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import consulting from "../../images/consulting.png";
+import guide from "../../images/Guide.png";
+import measurment from "../../images/measurment.png";
 import "./BasicService.css";
 
 function BasicService() {
@@ -11,7 +14,9 @@ function BasicService() {
         <Row>
           <Col sm={12} md={6} lg={4} className="BS-box">
             <div className="BS-icon-content">
-              <div className="BS-icon"></div>
+              <div className="BS-icon">
+                <img src={consulting} alt="Consulting" className="img-icon" />
+              </div>
             </div>
             <div className="BS-text-content">
               <h4 className="BS-heading">Free Consulting</h4>
@@ -24,7 +29,9 @@ function BasicService() {
           </Col>
           <Col sm={12} md={6} lg={4} className="BS-box">
             <div className="BS-icon-content">
-              <div className="BS-icon"></div>
+              <div className="BS-icon">
+                <img src={guide} alt="Guidance" className="img-icon" />
+              </div>
             </div>
             <div className="BS-text-content">
               <h4 className="BS-heading">Free Guidance</h4>
@@ -37,7 +44,9 @@ function BasicService() {
           </Col>
           <Col sm={12} md={6} lg={4} className="BS-box">
             <div className="BS-icon-content">
-              <div className="BS-icon"></div>
+              <div className="BS-icon">
+                <img src={measurment} alt="Measuring" className="img-icon" />
+              </div>
             </div>
             <div className="BS-text-content">
               <h4 className="BS-heading">Free Measuring</h4>

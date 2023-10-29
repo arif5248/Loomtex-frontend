@@ -3,7 +3,7 @@
   width: 100%;
   max-height: 625px;
   object-fit: cover;
-  animation: zoomIn 10s infinite;
+  animation: zoomIn 5s infinite;
   position: relative;
 }
 
@@ -34,6 +34,16 @@
   margin: 0;
   padding: 0;
   animation: heroDescription 1s 1.5s ease backwards;
+}
+.inner-box {
+  position: relative;
+}
+.overlay-carousel {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #00000066;
 }
 
 /* Animation for the text */
@@ -71,7 +81,7 @@
 
 /* Apply the slide-in animation to text on hover */
 .image-content:hover + .text-content {
-  animation: slideIn 1s forwards;
+  animation: slideIn 5s forwards;
 }
 
 .control-dots {
