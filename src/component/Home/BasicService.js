@@ -15,7 +15,10 @@ function BasicService() {
           <Col sm={12} md={6} lg={4} className="BS-box">
             <div className="BS-icon-content">
               <div className="BS-icon">
-                <img src={consulting} alt="Consulting" className="img-icon" />
+                <div className="inner-box"></div>
+                <div className="image-box">
+                  <img src={consulting} alt="Consulting" className="img-icon" />
+                </div>
               </div>
             </div>
             <div className="BS-text-content">
@@ -30,7 +33,10 @@ function BasicService() {
           <Col sm={12} md={6} lg={4} className="BS-box">
             <div className="BS-icon-content">
               <div className="BS-icon">
-                <img src={guide} alt="Guidance" className="img-icon" />
+                <div className="inner-box"></div>
+                <div className="image-box">
+                  <img src={guide} alt="Guidance" className="img-icon" />
+                </div>
               </div>
             </div>
             <div className="BS-text-content">
@@ -45,7 +51,10 @@ function BasicService() {
           <Col sm={12} md={6} lg={4} className="BS-box">
             <div className="BS-icon-content">
               <div className="BS-icon">
-                <img src={measurment} alt="Measuring" className="img-icon" />
+                <div className="inner-box"></div>
+                <div className="image-box">
+                  <img src={measurment} alt="Measuring" className="img-icon" />
+                </div>
               </div>
             </div>
             <div className="BS-text-content">
