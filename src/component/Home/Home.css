@@ -1,4 +1,7 @@
-.carousel-root {
+/* .carousel-root {
+  margin-top: -195px;
+} */
+.hero-section-left {
   margin-top: -195px;
 }
 .landing-page {
@@ -33,6 +36,9 @@
 .content-right:hover .content-heading {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #1c97cb;
+}
+.Welcome-section {
+  margin-top: 60px;
 }
 
 @media screen and (max-width: 768px) {

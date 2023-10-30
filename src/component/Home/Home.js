@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
 import CustomCarousel from "./Carousel";
-import "./Home.css";
 import { Link } from "react-router-dom";
 import BasicService from "./BasicService";
+import Welcome from "./welcome";
+
+import "./Home.css";
 
 function Home() {
   return (
@@ -40,6 +42,9 @@ function Home() {
       </div>
       <div className="basic-service">
         <BasicService />
+      </div>
+      <div className="Welcome-section">
+        <Welcome />
       </div>
     </Fragment>
   );
