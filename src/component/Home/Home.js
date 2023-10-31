@@ -15,29 +15,31 @@ function Home() {
         </div>
 
         <div className="hero-section-right">
-          <Link className="content-right" to={`Curtain`}>
-            <h4 className="content-heading">Curtains</h4>
-            <p className="content-desccription">
-              Curtains An irresistible range of decorative home accessories so
-              brighten up your home
-            </p>
-          </Link>
+          <div className="hero-section-right-content">
+            <Link className="right-content" to={`Curtain`}>
+              <h4 className="content-heading">Curtains</h4>
+              <p className="content-desccription">
+                Curtains An irresistible range of decorative home accessories so
+                brighten up your home
+              </p>
+            </Link>
 
-          <Link className="content-right" to={`Blind`}>
-            <h4 className="content-heading">Blinds</h4>
-            <p className="content-desccription">
-              Our window blinds are versatile and stylish with practical
-              screening and shade
-            </p>
-          </Link>
+            <Link className="right-content" to={`Blind`}>
+              <h4 className="content-heading">Blinds</h4>
+              <p className="content-desccription">
+                Our window blinds are versatile and stylish with practical
+                screening and shade
+              </p>
+            </Link>
 
-          <Link className="content-right" to={`Accessories`}>
-            <h4 className="content-heading">Accessories</h4>
-            <p className="content-desccription">
-              An irresistible range of decorative home accessories so brighten
-              up your home
-            </p>
-          </Link>
+            <Link className="right-content" to={`Accessories`}>
+              <h4 className="content-heading">Accessories</h4>
+              <p className="content-desccription">
+                An irresistible range of decorative home accessories so brighten
+                up your home
+              </p>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="basic-service">

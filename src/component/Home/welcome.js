@@ -11,7 +11,7 @@ import welcomeImage3 from "../../images/WelcomeImage3.jpg";
 import "./welcome.css";
 import { Link } from "react-router-dom";
 
-function welcome() {
+function Welcome() {
   const welcomeImages = [
     {
       imageUrl: welcomeImage1,
@@ -31,7 +31,12 @@ function welcome() {
             <div className="welcome-img-main-box">
               <div className="welcome-img-inner-box"></div>
               <div className="welcome-img-box">
-                <Carousel autoPlay showStatus={false} showThumbs={false}>
+                <Carousel
+                  autoPlay
+                  showStatus={false}
+                  showThumbs={false}
+                  id="abc"
+                >
                   {welcomeImages.map((welcomeImage, index) => (
                     <div className="welcome-box" key={index}>
                       <img
@@ -82,4 +87,4 @@ function welcome() {
   );
 }
 
-export default welcome;
+export default Welcome;

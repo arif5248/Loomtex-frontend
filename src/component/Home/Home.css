@@ -1,21 +1,21 @@
-/* .carousel-root {
-  margin-top: -195px;
-} */
-.hero-section-left {
-  margin-top: -195px;
-}
 .landing-page {
+  margin-top: -160px;
   display: flex;
   width: 100%;
-  height: 430px;
+  height: auto;
 }
 .hero-section-right {
-  padding: 45px;
+  position: relative;
+  margin: 45px 45px 75px 45px;
   width: 25%;
+  height: auto;
 }
-.content-right {
-  margin-bottom: 10px;
+.hero-section-right-content {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
+
 .content-heading {
   font-size: 20px;
   color: black;
@@ -24,10 +24,13 @@
 .content-desccription {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.527);
+  margin-bottom: 30px !important;
 }
 .hero-section-left {
   width: 75%;
+  height: auto;
 }
+
 .basic-service {
   background-image: url("../../images/bg-1.webp");
   width: 100%;
@@ -42,37 +45,42 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero-section-left {
-    margin-top: 0px;
-  }
-
   .landing-page {
-    display: flex;
+    margin-top: 0;
     flex-direction: column;
   }
   .hero-section-left {
     width: 100%;
   }
   .hero-section-right {
-    padding: 45px;
+    margin: 0px;
     width: 100%;
+    height: 300px !important;
+    display: flex;
+    justify-content: space-around;
+  }
+  .hero-section-right-content {
+    width: 80%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .carousel-root {
-    margin-top: 0px;
-  }
   .landing-page {
-    display: flex;
+    margin-top: 0;
     flex-direction: column;
   }
   .hero-section-left {
     width: 100%;
   }
   .hero-section-right {
-    padding: 45px;
+    margin: 0px;
     width: 100%;
+    height: 300px !important;
+    display: flex;
+    justify-content: space-around;
+  }
+  .hero-section-right-content {
+    width: 80%;
   }
 }
 

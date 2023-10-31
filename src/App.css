@@ -11,7 +11,7 @@
 
 body {
   background-color: var(--color-bg);
-  position: relative;
+  /* position: relative; */
 }
 a {
   text-decoration: none;
