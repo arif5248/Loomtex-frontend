@@ -3,6 +3,7 @@ import CustomCarousel from "./Carousel";
 import { Link } from "react-router-dom";
 import BasicService from "./BasicService";
 import Welcome from "./welcome";
+import ProductSlider from "./ProducctSlider";
 
 import "./Home.css";
 
@@ -47,6 +48,9 @@ function Home() {
       </div>
       <div className="Welcome-section">
         <Welcome />
+      </div>
+      <div className="products-section">
+        <ProductSlider />
       </div>
     </Fragment>
   );

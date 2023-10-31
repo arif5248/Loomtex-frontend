@@ -20,13 +20,13 @@
 .logoImage {
   width: 215px;
   height: auto;
-  padding: 10px 10px;
+  padding: 0px 10px;
   animation: logoTop 1s ease forwards;
 }
 .navbar {
   padding: 0px;
   position: sticky;
-  top: -60px;
+  top: -50px;
   --bs-navbar-brand-margin-end: 0;
   z-index: 999;
 }
