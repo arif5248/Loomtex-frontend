@@ -23,6 +23,8 @@ import "./ProductSlider.css";
 import { Link } from "react-router-dom";
 
 function App() {
+  const slidesPerView = window.innerWidth <= 768 ? 1 : 4;
+  const spaceBetween = window.innerWidth <= 768 ? 0 : -10;
   return (
     <div className="product-container">
       <div className="product-heading-box">
@@ -35,8 +37,8 @@ function App() {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={4}
-          spaceBetween={-10}
+          slidesPerView={slidesPerView}
+          spaceBetween={spaceBetween}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -86,15 +88,15 @@ function App() {
             <img src={slide_image_11} alt="slide_image" className="img-slide" />
           </SwiperSlide>
 
-          {/* <div className="slider-controler">
+          <div className="slider-controler">
             <div className="swiper-button-prev slider-arrow">
               <ion-icon name="arrow-back-outline"></ion-icon>
             </div>
             <div className="swiper-button-next slider-arrow">
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
-            <div className="swiper-pagination"></div>
-          </div> */}
+            {/* <div className="swiper-pagination"></div> */}
+          </div>
         </Swiper>
         <Link className="product-button" to={"product"}>
           Find out more product
