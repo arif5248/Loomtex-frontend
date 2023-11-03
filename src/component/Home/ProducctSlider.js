@@ -23,8 +23,8 @@ import "./ProductSlider.css";
 import { Link } from "react-router-dom";
 
 function App() {
-  const slidesPerView2 = window.innerWidth <= 1024 ? 3 : 4;
-  const slidesPerView = window.innerWidth <= 768 ? 1 : slidesPerView2;
+  //   const slidesPerView2 = window.innerWidth <= 1024 ? "auto" : "auto";
+  //   const slidesPerView = window.innerWidth <= 768 ? 1 : slidesPerView2;
   const spaceBetween = window.innerWidth <= 768 ? 0 : -10;
   return (
     <div className="product-container">
@@ -38,7 +38,7 @@ function App() {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={slidesPerView}
+          slidesPerView={"auto"}
           spaceBetween={spaceBetween}
           coverflowEffect={{
             rotate: 0,
