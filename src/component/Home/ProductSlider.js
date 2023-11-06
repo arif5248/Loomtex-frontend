@@ -23,9 +23,22 @@ import "./ProductSlider.css";
 import { Link } from "react-router-dom";
 
 function App() {
+  const featureProduts = [
+    { featureProdutUrl: slide_image_1 },
+    { featureProdutUrl: slide_image_2 },
+    { featureProdutUrl: slide_image_3 },
+    { featureProdutUrl: slide_image_4 },
+    { featureProdutUrl: slide_image_5 },
+    { featureProdutUrl: slide_image_6 },
+    { featureProdutUrl: slide_image_7 },
+    { featureProdutUrl: slide_image_8 },
+    { featureProdutUrl: slide_image_9 },
+    { featureProdutUrl: slide_image_10 },
+    { featureProdutUrl: slide_image_11 },
+  ];
   //   const slidesPerView2 = window.innerWidth <= 1024 ? "auto" : "auto";
   //   const slidesPerView = window.innerWidth <= 768 ? 1 : slidesPerView2;
-  const spaceBetween = window.innerWidth <= 768 ? 0 : -10;
+  const spaceBetween = window.innerWidth <= 768 ? -10 : -10;
   return (
     <div className="product-container">
       <div className="product-heading-box">
@@ -55,52 +68,29 @@ function App() {
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="swiper_container"
         >
-          <SwiperSlide>
-            <img src={slide_image_1} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_2} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_3} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_4} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_5} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_6} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_7} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_8} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_9} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_10} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={slide_image_11} alt="slide_image" className="img-slide" />
-          </SwiperSlide>
+          {featureProduts &&
+            featureProduts.map((featureProdut) => (
+              <SwiperSlide>
+                <img
+                  src={featureProdut.featureProdutUrl}
+                  alt="feature product"
+                  className="img-slide"
+                />
+              </SwiperSlide>
+            ))}
 
           <div className="slider-controler">
-            <div className="swiper-button-prev slider-arrow">
+            {/* <div className="swiper-button-prev slider-arrow">
               <ion-icon name="arrow-back-outline"></ion-icon>
             </div>
             <div className="swiper-button-next slider-arrow">
               <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            {/* <div className="swiper-pagination"></div> */}
+            </div> */}
+            <div className="swiper-pagination"></div>
           </div>
         </Swiper>
         <Link className="product-button" to={"product"}>
-          Find out more product
+          Find out more products
         </Link>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import Container from "react-bootstrap/esm/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
+  faFacebookF,
   faInstagram,
   faTiktok,
   faWhatsapp,
@@ -45,13 +45,13 @@ function Footer() {
           </div>
           <div className="footer-logo">
             {isVisible && (
-              <a href="/" id="scrollToTopLogo" onClick={scrollToTop}>
+              <div id="scrollToTopLogo" onClick={scrollToTop}>
                 <img
                   className="logoImage footer-logo-img"
                   src={Logo}
                   alt="LoomTex"
                 />
-              </a>
+              </div>
             )}
           </div>
           <div className="phone-section">
@@ -64,42 +64,73 @@ function Footer() {
         </div>
         <div className="row-one">
           <div className="horizontal-line"></div>
-          <div className="social-icon">
-            <a href="#">
-              <FontAwesomeIcon
-                className="icon"
-                icon={faWhatsapp}
-                style={{ color: "#077e09" }}
-              />
+          <div className="social-icon wrapper">
+            <a
+              href="https://wa.me/message/PGEKSQYAAKZDC1"
+              target="_blank"
+              rel="noreferrer"
+              className="icon whatsapp"
+            >
+              <div class="tooltip">Whatsapp</div>
+              <span>
+                <FontAwesomeIcon
+                  className="i"
+                  icon={faWhatsapp}
+                  style={{ color: "#2CCD47" }}
+                />
+              </span>
             </a>
-            <a href="#">
-              <FontAwesomeIcon
-                className="icon"
-                icon={faInstagram}
-                style={{ color: "#a632ae" }}
-              />
+            <a
+              href="https://instagram.com/loomtex_curtain_?igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+              rel="noreferrer"
+              className="icon instagram"
+            >
+              <div class="tooltip">instagram</div>
+              <span>
+                <FontAwesomeIcon
+                  className="i"
+                  icon={faInstagram}
+                  style={{ color: "#D02883" }}
+                />
+              </span>
             </a>
-
-            <a href="#">
-              <FontAwesomeIcon
-                className="icon"
-                icon={faFacebook}
-                style={{ color: "#0957dc" }}
-              />
+            <a
+              href="https://www.facebook.com/profile.php?id=61552381468895&mibextid=ZbWKwL"
+              target="_blank"
+              rel="noreferrer"
+              className="icon facebook"
+            >
+              <div class="tooltip">Facebook</div>
+              <span>
+                <FontAwesomeIcon
+                  className="i"
+                  icon={faFacebookF}
+                  style={{ color: "#3b5999" }}
+                />
+              </span>
             </a>
-            <a href="#">
-              <FontAwesomeIcon
-                className="icon"
-                icon={faTiktok}
-                style={{ color: "#6034a2" }}
-              />
+            <a
+              href="https://www.tiktok.com/@loomtexcurtaindxb?_t=8gQfJBR9d4i&_r=1"
+              target="_blank"
+              rel="noreferrer"
+              className="icon tiktok"
+            >
+              <div class="tooltip">Tiktok</div>
+              <span>
+                <FontAwesomeIcon
+                  className="i"
+                  icon={faTiktok}
+                  style={{ color: "#000" }}
+                />
+              </span>
             </a>
           </div>
           <div className="horizontal-line"></div>
         </div>
       </Container>
       <div className="copyright">
-        <span>Loomtex</span> &copy; 2023 || All right recerved
+        <span>Loomtex</span> &copy; 2023 || All right reserved
       </div>
     </Fragment>
   );

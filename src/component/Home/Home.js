@@ -3,7 +3,8 @@ import CustomCarousel from "./Carousel";
 import { Link } from "react-router-dom";
 import BasicService from "./BasicService";
 import Welcome from "./welcome";
-import ProductSlider from "./ProducctSlider";
+import ProductSlider from "./ProductSlider";
+import MainService from "./MainService";
 
 import "./Home.css";
 
@@ -51,6 +52,9 @@ function Home() {
       </div>
       <div className="products-section">
         <ProductSlider />
+      </div>
+      <div className="main-service-section">
+        <MainService />
       </div>
     </Fragment>
   );
